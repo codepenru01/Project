@@ -1,0 +1,133 @@
+:root {
+    --cls-bg: #000000;
+    --cls-text: #FFFFFF;
+    --cls-btn: #FF7143;
+}
+
+.dark {
+    --cls-bg: #db23d8;
+    --cls-text: #FFFFFF;
+    --cls-btn: #000000;
+}
+
+.site-header {
+    background: var(--cls-bg);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0;
+    padding: 29px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    margin-right: 66px;
+}
+
+.logo__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cls-text);
+    width: 151px;
+    height: 32px;
+    border: none0;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item  + .navbar__item {
+    margin-left: 40px;
+}
+
+.navbar__item-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cls-text);
+    transition: all 0.5s;
+}
+
+.navbar__item-link:hover {
+    color: red;
+}
+
+.link__btn {
+    background-color: var(--cls-bg);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cls-text);
+    border-left: 1px solid rgba(255, 255, 255, 0.16);
+    padding-left: 42px;
+    margin-left: 42px;
+    margin-right: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn__link {
+    background: var(--cls-btn);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--cls-bg);
+    padding: 12px 32px;
+    transition: all 0.5s;
+}
+
+.btn__link:hover {
+    background-color: var(--cls-text);
+}
+
+.label__form {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .navbar {
+        display: none;
+    }
+
+    .link__btn {
+        display: none;
+    }
+
+    .btn__link {
+        display: none;
+    }
+
+    .label__form {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo__text {
+        display: none;
+    }
+}

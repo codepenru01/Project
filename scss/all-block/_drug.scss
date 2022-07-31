@@ -1,0 +1,85 @@
+.drug {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../../images/bgc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.drug__text {
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.drug__heading {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 576px;
+    margin-top: 39px;
+}
+
+.drug__paul {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 41px;
+    margin-bottom: 5px;
+}
+
+.drug__direc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (max-width: 1111px) {
+    .drug__heading {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .drug {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .drug__direc {
+        margin-bottom: 20px;
+    }
+
+    .drug__img-link {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .drug__heading {
+        font-size: 25px;
+    }
+
+    .drug__img {
+        width: 400px;
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .drug__heading {
+        font-size: 20px;
+    }
+
+    .drug__img {
+        width: 250px;
+        height: 400px;
+    }
+}
